@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum Sistem Multimedia - Modul 2</title>
+    <!-- Menghubungkan file CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Modul 2: HTML – Audio, Video, YouTube, dan API</h1>
+        <p>Praktikum Sistem Multimedia</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#pengantar">Pengantar</a></li>
+            <li><a href="#teori">Dasar Teori</a></li>
+            <li><a href="#format-video">Bentuk Video</a></li>
+            <li><a href="#format-audio">Bentuk Audio</a></li>
+            <li><a href="#youtube">YouTube</a></li>
+            <li><a href="#api-geolocation">API Geolocation</a></li>
+            <li><a href="#drag-drop">Drag & Drop</a></li>
+            <li><a href="#prosedur">Prosedur Praktikum</a></li>
+        </ul>
+    </nav>
+
+    <section id="pengantar">
+        <h2>Kemampuan Akhir yang Diharapkan</h2>
+        <ol>
+            <li>Memahami definisi multimedia, bentuk-bentuk multimedia, serta bentuk video dan audio.</li>
+            <li>Mengujicobakan dan mendiskusikan program HTML yang berkaitan dengan audio, video, YouTube, serta API pada web.</li>
+            <li>Mampu membuat program singkat yang menggunakan audio, video, dan YouTube.</li>
+            <li>Membuat dan menjelaskan tugas yang diberikan.</li>
+        </ol>
+    </section>
+
+    <section id="teori">
+        <h2>Dasar Teori</h2>
+        <p>Multimedia pada web meliputi suara, musik, video, film, dan animasi. Multimedia hadir dalam berbagai format, seperti gambar, musik, suara, video, rekaman, film, animasi, dan masih banyak lagi. Halaman web sering kali mengandung elemen-elemen multimedia dari berbagai jenis dan format.</p>
+    </section>
+
+    <section id="format-video">
+        <h2>Bentuk-bentuk Video</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Format File</th>
+                    <th>Ekstensi</th>
+                    <th>Deskripsi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>MPEG</td>
+                    <td>.mpg, .mpeg</td>
+                    <td>Dikembangkan oleh Moving Pictures Expert Group. Format video populer pertama di web. Tidak didukung dalam HTML5.</td>
+                </tr>
+                <tr>
+                    <td>AVI</td>
+                    <td>.avi</td>
+                    <td>Dikembangkan oleh Microsoft. Digunakan dalam kamera video dan perangkat keras TV. Tidak didukung di browser web.</td>
+                </tr>
+                <tr>
+                    <td>WMV</td>
+                    <td>.wmv</td>
+                    <td>Dikembangkan oleh Microsoft. Biasa digunakan dalam perangkat TV. Tidak dimainkan di browser web.</td>
+                </tr>
+                <tr>
+                    <td>QuickTime</td>
+                    <td>.mov</td>
+                    <td>Dikembangkan oleh Apple. Digunakan dalam kamera video dan perangkat keras TV. Tidak didukung di browser web.</td>
+                </tr>
+                <tr>
+                    <td>RealVideo</td>
+                    <td>.rm, .ram</td>
+                    <td>Dikembangkan oleh Real Media. Masih digunakan untuk video online, tetapi tidak diputar di browser web.</td>
+                </tr>
+                <tr>
+                    <td>Flash</td>
+                    <td>.swf, .flv</td>
+                    <td>Dikembangkan oleh Macromedia. Memerlukan plug-in tambahan untuk dimainkan di browser web.</td>
+                </tr>
+                <tr>
+                    <td>Ogg</td>
+                    <td>.ogg</td>
+                    <td>Dikembangkan oleh Xiph.Org Foundation. Didukung oleh HTML5.</td>
+                </tr>
+                <tr>
+                    <td>WebM</td>
+                    <td>.webm</td>
+                    <td>Dikembangkan oleh Mozilla, Opera, Adobe, dan Google. Didukung oleh HTML5.</td>
+                </tr>
+                <tr>
+                    <td>MP4</td>
+                    <td>.mp4</td>
+                    <td>Dikembangkan oleh Moving Pictures Expert Group. Berdasarkan QuickTime. Direkomendasikan oleh YouTube. Didukung oleh HTML5.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="format-audio">
+        <h2>Bentuk-bentuk Audio</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Format File</th>
+                    <th>Ekstensi</th>
+                    <th>Deskripsi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>MIDI</td>
+                    <td>.mid, .midi</td>
+                    <td>Format utama untuk perangkat musik elektronik seperti synthesizer dan sound card PC. Tidak didukung di browser web.</td>
+                </tr>
+                <tr>
+                    <td>RealAudio</td>
+                    <td>.rm, .ram</td>
+                    <td>Dikembangkan oleh Real Media untuk streaming audio dengan bandwidth rendah. Tidak didukung di browser web.</td>
+                </tr>
+                <tr>
+                    <td>WMA</td>
+                    <td>.wma</td>
+                    <td>Dikembangkan oleh Microsoft. Digunakan di pemutar musik. Tidak didukung di browser web.</td>
+                </tr>
+                <tr>
+                    <td>AAC</td>
+                    <td>.aac</td>
+                    <td>Dikembangkan oleh Apple untuk iTunes. Tidak didukung di browser web.</td>
+                </tr>
+                <tr>
+                    <td>WAV</td>
+                    <td>.wav</td>
+                    <td>Dikembangkan oleh IBM dan Microsoft. Didukung oleh HTML5.</td>
+                </tr>
+                <tr>
+                    <td>Ogg</td>
+                    <td>.ogg</td>
+                    <td>Dikembangkan oleh Xiph.Org Foundation. Didukung oleh HTML5.</td>
+                </tr>
+                <tr>
+                    <td>MP3</td>
+                    <td>.mp3</td>
+                    <td>Format audio paling populer, didukung oleh semua browser.</td>
+                </tr>
+                <tr>
+                    <td>MP4</td>
+                    <td>.mp4</td>
+                    <td>Sebenarnya format video, tetapi dapat digunakan untuk audio. Didukung oleh semua browser HTML5.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="youtube">
+        <h2>YouTube Videos</h2>
+        <p>Cara termudah untuk memainkan video di HTML adalah dengan menggunakan YouTube. Anda tidak perlu mengonversi video ke berbagai format agar dapat diputar di semua browser.</p>
+        <h3>Menampilkan Video YouTube di HTML</h3>
+        <p>Untuk memutar video Anda di halaman web, lakukan langkah-langkah berikut:</p>
+        <ol>
+            <li>Unggah video ke YouTube.</li>
+            <li>Catat ID video (contoh: tgbNymZ7vqY).</li>
+            <li>Tetapkan elemen &lt;iframe&gt; di halaman web Anda.</li>
+            <li>Gunakan atribut src untuk menghubungkan ke URL video.</li>
+        </ol>
+        <h3>Contoh Menggunakan iFrame</h3>
+        <pre>
+&lt;iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY"&gt;&lt;/iframe&gt;
+        </pre>
+    </section>
+
+    <section id="api-geolocation">
+        <h2>API Geolocation</h2>
+        <p>Geolocation API digunakan untuk mendapatkan lokasi geografis pengguna. Geolocation tersedia di browser modern, memungkinkan pengembang untuk memanfaatkan data lokasi dalam aplikasi web.</p>
+        <h3>Contoh Penggunaan Geolocation API</h3>
+        <p>Contoh penggunaan API Geolocation dalam HTML untuk mendapatkan posisi geografis pengguna:</p>
+        <pre>
+&lt;button onclick="getLocation()"&gt;Coba Dapatkan Lokasi&lt;/button&gt;
+&lt;p id="demo"&gt;&lt;/p&gt;
+
+&lt;script&gt;
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+        document.getElementById("demo").innerHTML = "Geolocation tidak didukung di browser ini.";
+    }
+}
+
+function showPosition(position) {
+    document.getElementById("demo").innerHTML = 
+    "Latitude: " + position.coords.latitude + 
+    "&lt;br&gt;Longitude: " + position.coords.longitude;
+}
+&lt;/script&gt;
+        </pre>
+    </section>
+
+    <section id="drag-drop">
+        <h2>API Drag and Drop</h2>
+        <p>Drag and Drop API memungkinkan pengguna untuk menyeret elemen-elemen pada halaman web dan menjatuhkannya di lokasi yang diinginkan. Fitur ini sering digunakan dalam aplikasi yang membutuhkan interaktivitas tinggi.</p>
+        <h3>Contoh Penggunaan Drag and Drop</h3>
+        <p>Contoh sederhana Drag and Drop menggunakan elemen HTML:</p>
+        <pre>
+&lt;div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="width:350px;height:70px;padding:10px;border:1px solid #aaaaaa"&gt;
+  Drop item here
+&lt;/div&gt;
+
+&lt;img id="drag1" src="img_logo.png" draggable="true" ondragstart="drag(event)" width="88" height="31"&gt;
+
+&lt;script&gt;
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+&lt;/script&gt;
+        </pre>
+    </section>
+
+    <section id="prosedur">
+        <h2>Prosedur Praktikum</h2>
+        <ol>
+            <li>Buka Notepad atau editor teks lainnya.</li>
+            <li>Ujicobakan program HTML yang diberikan.</li>
+            <li>Simpan file dengan ekstensi <strong>.html</strong>.</li>
+            <li>Tampilkan pada browser seperti Mozilla Firefox, Chrome, atau Safari.</li>
+        </ol>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Praktikum Sistem Multimedia - Modul 2</p>
+        <p>Nama : Nabila Raisya Salsabila</p>
+        <p>NIM : 220211060255</p>
+    </footer>
+</body>
+</html>
